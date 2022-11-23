@@ -1,45 +1,48 @@
 <!DOCTYPE html>
 
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Filter</title>
-        <link rel="stylesheet" href="css/main.css">
-    </head>
-    <body>
-        
-        <!-- Control buttons -->
-        <div id="myBtnContainer">
-            <button class="all active" > Show all</button>
-            <button class="cars" > Cars</button>
-            <button class="animals" > Animals</button>
-            <button class="fruits" > Fruits</button>
-            <button class="colors"> Colors</button>
-        </div>
-    
-        <div class="clearfix"></div>
-        
-        <!-- The filterable elements. Note that some have multiple class names (this can be used if they belong to multiple categories) -->
-        <div class="container">
-            <div class="filterDiv f-cars">BMW</div>
-            <div class="filterDiv f-colors f-fruits">Orange</div>
-            <div class="filterDiv f-cars">Volvo</div>
-            <div class="filterDiv f-colors">Red</div>
-            <div class="filterDiv f-cars f-animals">Mustang</div>
-            <div class="filterDiv f-colors">Blue</div>
-            <div class="filterDiv f-animals">Cat</div>
-            <div class="filterDiv f-animals">Dog</div>
-            <div class="filterDiv f-fruits">Melon</div>
-            <div class="filterDiv f-fruits f-animals">Kiwi</div>
-            <div class="filterDiv f-fruits">Banana</div>
-            <div class="filterDiv f-fruits">Lemon</div>
-            <div class="filterDiv f-animals">Cow</div>
-            <div class="filterDiv f-fruits">Lemon</div>
-            <div class="filterDiv f-animals">Cow</div>
-        </div> 
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filter</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+
+    <!-- Control buttons -->
+    <div id="myBtnContainer">
+        <button class="active" data-tp="all"> Show all</button>
+        <button data-tp="cars"> Cars</button>
+        <button data-tp="animals"> Animals</button>
+        <button data-tp="fruits"> Fruits</button>
+        <button data-tp="colors"> Colors</button>
+    </div>
+
+    <div class="clearfix"></div>
+
+    <!-- The filterable elements. Note that some have multiple class names (this can be used if they belong to multiple categories) -->
+    <div class="container">
+        <div class="filterDiv cars">BMW</div>
+        <div class="filterDiv colors fruits">Orange</div>
+        <div class="filterDiv cars">Volvo</div>
+        <div class="filterDiv colors">Red</div>
+        <div class="filterDiv cars animals">Mustang</div>
+        <div class="filterDiv colors">Blue</div>
+        <div class="filterDiv animals">Cat</div>
+        <div class="filterDiv animals">Dog</div>
+        <div class="filterDiv fruits">Melon</div>
+        <div class="filterDiv fruits animals">Kiwi</div>
+        <div class="filterDiv fruits">Banana</div>
+        <div class="filterDiv fruits">Lemon</div>
+        <div class="filterDiv animals">Cow</div>
+        <div class="filterDiv fruits">Lemon</div>
+        <div class="filterDiv animals">Cow</div>
+    </div>
 
 
-        <script src="js/main.js"></script>
-    </body>
+    <script src="js/main.js"></script>
+</body>
+
 </html>
