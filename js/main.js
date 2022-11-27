@@ -10,7 +10,7 @@ btns.forEach((btn) => {
     let allElm = document.querySelectorAll('.container .filterDiv')
 
     // check type of sellected btn
-    if (btn.classList.contains('all')) {
+    if (btn.getAttribute('data-tp')==='all') {
       // add show class to all elements
       allElm.forEach((elm) => {
         elm.classList.add('show')
