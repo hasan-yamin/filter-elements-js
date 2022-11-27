@@ -1,6 +1,6 @@
 # Simple filter
 
-## HTML - css - Typescript
+## HTML - css - js
  
 ### Installing
  
